@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+
+@font-face {
+	font-family: ProductSans;
+	src: local(ProductSans), url(../fonts/ProductSans-Regular.ttf);
+}
+
+@font-face {
+	font-family: ProductSans;
+	src: local(ProductSans), url(../fonts/ProductSans-Black.ttf);
+    font-weight: 600;
+}
+
+@font-face {
+	font-family: ProductSans;
+	src: local(ProductSans), url(../fonts/ProductSans-Bold.ttf);
+    font-weight: 800;
+}
+
+@font-face {
+	font-family: Circular;
+	src: local(Circular), url(../fonts/CircularSpotifyTxT-Black.ttf);
+}
+
+
+
+
+/* cores - azul: #2941ab /  verde: #1ed760 / preto: #000 / cinza: #919496 / 
+cinza-escuro: #222326*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: 'ProductSans', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    width: 100%;
+    height: 100vh;
+}
+
+/* Inicio menu */
+
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    height: 80px;
+    background-color: black;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7em;
+}
+
+.menu-nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.menu-nav li>a{
+    color: white;
+    margin-left: 2.5em;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+}
+
+.menu-nav li>a:hover{
+    color: #1ed760;
+}
+
+/* Fim menu */
+
+/* Inicio main */
+
+.main{
+    background-color: #2941ab;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.main-principal{
+    font-size: 4.5em;
+    line-height: 1.2;
+    color: #1ed760;
+}
+
+.main-principal p{
+    padding-top: 2em;
+    font-size: 0.26em;
+}
+
+.main-principal h1{
+    font-family: 'Circular', sans-serif;
+}
+
+.main-principal .botao{
+    font-family: 'ProductSans', sans-serif;
+    text-transform: uppercase;
+    font-size: 0.20em;
+    font-weight: bold;
+    background-color: #1ed760;
+    border: none;
+    padding: 1.1em 2em;
+    border-radius: 2em;
+}
+
+.main-principal .botao:hover{
+    background-color: #28fa71;
+}
+
+.botao a{
+    color: #2941ab;
+}
+
+/* Fim main */
+
+/* Inicio Footer */
+
+.footer{
+    height: 58vh;
+    background-color: black;
+    color: white;
+}
+
+.container-footer{
+    display: grid;
+    grid-template-areas: ". lo em co li re re ."
+                         ". ro ro ro ro rod rod .";
+    grid-template-columns: 10% repeat(6, 13.3%) 10%;
+    grid-template-rows: 48vh 10vh;
+}
+
+.container-footer img{
+    margin-top: 80px;
+}
+
+.primeiro{
+    margin-top: 80px;
+    font-weight: bold;
+}
+
+.container-footer li{
+    padding: 12px 10px;
+    letter-spacing: 1px;
+}
+
+ .container-footer li:nth-child(1){
+    margin-bottom: 30px;
+    font-size: 0.8em;
+    color: #919496;
+} 
+
+.container-footer a{
+    color: white;
+}
+
+.container-footer a:hover{
+    color: #1ed760;
+}
+
+.logo{
+    grid-area: lo;
+
+}
+
+.empresa{
+    grid-area: em;
+    
+}
+
+.comunidades{
+    grid-area: co;
+    
+}
+
+.links{
+    grid-area: li;
+    
+}
+
+.redes{
+    grid-area: re;
+    
+}
+
+.rodape{
+    grid-area: ro;
+    
+}
+
+.rodape-direita{
+    grid-area: rod;
+    
+}
+
+.redes{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.circulo-insta, .circulo-twitter, .circulo-facebook{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    margin-left: 12px;
+    width: 55px;
+    height: 55px;
+    background-color: #222326;
+    border-radius: 50%;
+}
+
+.circulo-insta i, .circulo-twitter i, 
+.circulo-facebook i{
+    padding-top: 11px;
+}
+
+.rodape-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.items-rodape{
+    display: flex;
+}
+
+.items-rodape li{
+    font-size: 0.75em;
+}
+
+.items-rodape a{
+   color: #919496;
+}
+
+.rodape-direita{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding-top: 10px;
+}
+
+.rodape-direita p{
+    font-size: 0.75em;
+    color: #919496;
+}
+
+.rodape-direita p:hover{
+    color:#1ed760;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
